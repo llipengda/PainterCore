@@ -818,8 +818,8 @@ Component({
           {
             canvasId: 'photo',
             canvas: that.properties.use2D ? that.canvasNode : null,
-            destWidth: that.canvasWidthInPx,
-            destHeight: that.canvasHeightInPx,
+            destWidth: that.canvasWidthInPx * getApp().systemInfo.pixelRatio,
+            destHeight: that.canvasHeightInPx * getApp().systemInfo.pixelRatio,
             success: function (res) {
               that.getImageInfo(res.tempFilePath)
             },
