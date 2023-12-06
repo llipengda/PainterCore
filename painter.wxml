@@ -5,15 +5,8 @@
       <canvas canvas-id="bottom" style="{{painterStyle}};position: absolute;" />
       <canvas canvas-id="k-canvas" style="{{painterStyle}};position: absolute;" />
       <canvas canvas-id="top" style="{{painterStyle}};position: absolute;" />
-      <canvas 
-        canvas-id="front" 
-        style="{{painterStyle}};position: absolute;"
-        bindtouchstart="onTouchStart"
-        bindtouchmove="onTouchMove"
-        bindtouchend="onTouchEnd"
-        bindtouchcancel="onTouchCancel"
-        disable-scroll="{{true}}" />
-      </block>
+      <canvas canvas-id="front" style="{{painterStyle}};position: absolute;" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd" bindtouchcancel="onTouchCancel" disable-scroll="{{true}}" />
+    </block>
   </block>
   <block wx:if="{{use2D}}">
     <canvas type="2d" id="photo" style="{{photoStyle}};" />
