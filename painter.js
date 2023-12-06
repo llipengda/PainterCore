@@ -886,7 +886,7 @@ Component({
                 (infoRes.height * that.canvasHeightInPx)
             ) < 0.01
           ) {
-            that.triggerEvent('imgOK', {
+            that.triggerEvent('img-ok', {
               path: filePath
             })
           } else {
